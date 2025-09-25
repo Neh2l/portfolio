@@ -1,0 +1,243 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #f9f9fb;
+  color: #333;
+  line-height: 1.6;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 5%;
+  background: #fff;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+.navbar .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #2c3e50;
+}
+.navbar .nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.2rem;
+}
+.navbar .nav-links li a {
+  text-decoration: none;
+  color: #333;
+  transition: 0.3s;
+}
+.navbar .nav-links li a:hover {
+  color: #3498db;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5% 8%;
+  min-height: 100vh;
+}
+.hero-left {
+  flex: 1;
+  padding-right: 2rem;
+}
+.hero-left h1 {
+  font-size: 2.8rem;
+  margin-bottom: 0.5rem;
+  color: #2c3e50;
+}
+.hero-left h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1.2rem;
+  color: #3498db;
+}
+.hero-left p {
+  margin-bottom: 1.5rem;
+}
+.contact-info a, .contact-info span {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #555;
+  text-decoration: none;
+}
+.contact-info i {
+  margin-right: 0.5rem;
+  color: #3498db;
+}
+.hero-buttons {
+  margin-top: 1.5rem;
+}
+.btn {
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  text-decoration: none;
+  margin-right: 0.8rem;
+  transition: 0.3s;
+}
+.btn.primary {
+  background: #3498db;
+  color: #fff;
+}
+.btn.primary:hover {
+  background: #217dbb;
+}
+.btn.outline {
+  border: 2px solid #3498db;
+  color: #3498db;
+}
+.btn.outline:hover {
+  background: #3498db;
+  color: #fff;
+}
+.hero-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+/* .hero-img {
+  width: 320px;
+  border-radius: 50%;
+  border: 5px solid #3498db;
+} */
+
+section {
+  padding: 4rem 8%;
+}
+section h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  color: #2c3e50;
+}
+
+.exp-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+.card {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.05);
+  transition: 0.3s;
+}
+.card:hover {
+  transform: translateY(-5px);
+}
+.card h3 {
+  margin-bottom: 0.6rem;
+  color: #3498db;
+  font-size: 1.2rem;
+}
+/* Skills Section */
+.skills {
+  padding: 60px 20px;
+  background: #fdfdfd;
+  text-align: center;
+}
+
+.skills h2 {
+  font-size: 2.2rem;
+  margin-bottom: 30px;
+  color: #222;
+}
+
+.skills-container {
+  max-width: 800px;
+  margin: auto;
+}
+
+.skill {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.skill span {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 8px;
+  color: #444;
+}
+
+.progress-bar {
+  background: #e0e0e0;
+  border-radius: 30px;
+  overflow: hidden;
+  height: 12px;
+}
+
+.progress {
+  height: 100%;
+  border-radius: 30px;
+  width: 0; /* Start Empty */
+  transition: width 2s ease-in-out;
+}
+
+/* Custom colors */
+.html 
+{ 
+    background: #e34c26; 
+}
+.css 
+{
+     background: #264de4; 
+    }
+.js { background: #f0db4f; }
+.react { background: #61dbfb; }
+.bootstrap { background: #7952b3; }
+.mui { background: #007fff; }
+.tailwind { background: #38bdf8; }
+.figma { background: #a259ff; }
+.responsive { background: #16a34a; }
+.git { background: #f34f29; }
+
+/* Animation when visible */
+.progress.animate.html 
+{ width: 95%; }
+.progress.animate.css { width: 90%; }
+.progress.animate.js { width: 85%; }
+.progress.animate.react { width: 80%; }
+.progress.animate.bootstrap { width: 85%; }
+.progress.animate.mui { width: 80%; }
+.progress.animate.tailwind { width: 75%; }
+.progress.animate.figma { width: 85%; }
+.progress.animate.responsive { width: 90%; }
+.progress.animate.git { width: 80%; }
+
+.proj-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.footer {
+  background: #2c3e50;
+  color: #fff;
+  text-align: center;
+  padding: 1.5rem;
+}
+.footer .socials {
+  margin-bottom: 1rem;
+}
+.footer .socials a {
+  color: #fff;
+  margin: 0 0.6rem;
+  font-size: 1.3rem;
+  transition: 0.3s;
+}
+.footer .socials a:hover {
+  color: #3498db;
+}
