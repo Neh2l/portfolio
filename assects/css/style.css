@@ -142,7 +142,6 @@ section h2 {
   color: #3498db;
   font-size: 1.2rem;
 }
-/* Skills Section */
 .skills {
   padding: 60px 20px;
   background: #fdfdfd;
@@ -182,11 +181,10 @@ section h2 {
 .progress {
   height: 100%;
   border-radius: 30px;
-  width: 0; /* Start Empty */
+  width: 0; 
   transition: width 2s ease-in-out;
 }
 
-/* Custom colors */
 .html 
 { 
     background: #e34c26; 
@@ -204,7 +202,6 @@ section h2 {
 .responsive { background: #16a34a; }
 .git { background: #f34f29; }
 
-/* Animation when visible */
 .progress.animate.html 
 { width: 95%; }
 .progress.animate.css { width: 90%; }
